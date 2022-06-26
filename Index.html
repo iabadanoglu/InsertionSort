@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+<h3><strong>1. </strong>[22,27,16,2,18,6]-&gt; Insertion Sort Aşamaları</h3>
+<table>
+<tbody>
+<tr>
+<td width="29">
+<p><strong>22 </strong></p>
+</td>
+<td width="36">
+<p>&nbsp;27</p>
+</td>
+<td width="38">
+<p>16</p>
+</td>
+<td width="29">
+<p>2</p>
+</td>
+<td width="37">
+<p>18</p>
+</td>
+<td width="16">
+<p>6</p>
+</td>
+</tr>
+<tr>
+<td width="29">
+<p><strong>22</strong></p>
+</td>
+<td width="36">
+<p>27</p>
+</td>
+<td width="38">
+<p>&nbsp;16</p>
+</td>
+<td width="29">
+<p>2</p>
+</td>
+<td width="37">
+<p>18</p>
+</td>
+<td width="16">
+<p>6</p>
+</td>
+</tr>
+<tr>
+<td width="29">
+<p><strong>16</strong></p>
+</td>
+<td width="36">
+<p><strong>22</strong></p>
+</td>
+<td width="38">
+<p><strong>27 </strong></p>
+</td>
+<td width="29">
+<p>&nbsp;2</p>
+</td>
+<td width="37">
+<p>18</p>
+</td>
+<td width="16">
+<p>6</p>
+</td>
+</tr>
+<tr>
+<td width="29">
+<p><strong>2</strong></p>
+</td>
+<td width="36">
+<p><strong>16</strong></p>
+</td>
+<td width="38">
+<p><strong>22</strong></p>
+</td>
+<td width="29">
+<p><strong>27 </strong></p>
+</td>
+<td width="37">
+<p>&nbsp;18</p>
+</td>
+<td width="16">
+<p>6</p>
+</td>
+</tr>
+<tr>
+<td width="29">
+<p><strong>2</strong></p>
+</td>
+<td width="36">
+<p><strong>16</strong></p>
+</td>
+<td width="38">
+<p><strong>18</strong></p>
+</td>
+<td width="29">
+<p><strong>22</strong></p>
+</td>
+<td width="37">
+<p><strong>27 </strong></p>
+</td>
+<td width="16">
+<p>&nbsp;6</p>
+</td>
+</tr>
+<tr>
+<td width="29">
+<p><strong>2</strong></p>
+</td>
+<td width="36">
+<p><strong>6</strong></p>
+</td>
+<td width="38">
+<p><strong>16</strong></p>
+</td>
+<td width="29">
+<p><strong>18</strong></p>
+</td>
+<td width="37">
+<p><strong>22</strong></p>
+</td>
+<td width="16">
+<p><strong>27</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h3><strong>2.</strong> Dizinin Big-O g&ouml;sterimi</h3>
+<p>Step 1 -&gt; n</p>
+<p>Step 2 -&gt; n-1</p>
+<p>Step 3 -&gt; n-2</p>
+<p>....</p>
+<p>Step n-1 -&gt; 1</p>
+<p>&nbsp;</p>
+<p>sum = (n*(n-1))/2 -&gt; O(n^2)</p>
+<h3><strong>3.</strong> Time Complexity</h3>
+<p>Average case: Aradığımız sayının ortada olması,</p>
+<p>Worst case: Aradığımız sayının sonda olması,</p>
+<p>Best case: Aradığımız sayının dizinin en başında olması.</p>
+<p>&nbsp;</p>
+<h3><strong>4.</strong> 18 sayısı Average case kapsamına girmekte</h3>
+<p>&nbsp;</p>
+<p><strong>[7,3,5,8,2,9,4,15,6</strong>]&nbsp;-&gt; Insertion Sort &ndash; ilk d&ouml;rt aşama</p>
+<table>
+<tbody>
+<tr>
+<td width="28">
+<p><strong>7</strong></p>
+</td>
+<td width="28">
+<p>3</p>
+</td>
+<td width="28">
+<p>5</p>
+</td>
+<td width="28">
+<p>8</p>
+</td>
+<td width="28">
+<p>2</p>
+</td>
+<td width="22">
+<p>9</p>
+</td>
+<td width="22">
+<p>4</p>
+</td>
+<td width="22">
+<p>15</p>
+</td>
+<td width="41">
+<p>6</p>
+</td>
+</tr>
+<tr>
+<td width="28">
+<p><strong>3</strong></p>
+</td>
+<td width="28">
+<p><strong>7</strong></p>
+</td>
+<td width="28">
+<p>5</p>
+</td>
+<td width="28">
+<p>8</p>
+</td>
+<td width="28">
+<p>2</p>
+</td>
+<td width="22">
+<p>9</p>
+</td>
+<td width="22">
+<p>4</p>
+</td>
+<td width="22">
+<p>15</p>
+</td>
+<td width="41">
+<p>6</p>
+</td>
+</tr>
+<tr>
+<td width="28">
+<p><strong>3</strong></p>
+</td>
+<td width="28">
+<p><strong>5</strong></p>
+</td>
+<td width="28">
+<p><strong>7</strong></p>
+</td>
+<td width="28">
+<p>8</p>
+</td>
+<td width="28">
+<p>2</p>
+</td>
+<td width="22">
+<p>9</p>
+</td>
+<td width="22">
+<p>4</p>
+</td>
+<td width="22">
+<p>15</p>
+</td>
+<td width="41">
+<p>6</p>
+</td>
+</tr>
+<tr>
+<td width="28">
+<p><strong>3</strong></p>
+</td>
+<td width="28">
+<p><strong>5</strong></p>
+</td>
+<td width="28">
+<p><strong>7</strong></p>
+</td>
+<td width="28">
+<p><strong>8</strong></p>
+</td>
+<td width="28">
+<p>2</p>
+</td>
+<td width="22">
+<p>9</p>
+</td>
+<td width="22">
+<p>4</p>
+</td>
+<td width="22">
+<p>15</p>
+</td>
+<td width="41">
+<p>6</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
